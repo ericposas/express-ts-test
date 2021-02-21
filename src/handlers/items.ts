@@ -1,7 +1,7 @@
 import { MongoClient, MongoError } from "mongodb";
 import { mongoConnectionString, mongoOptions } from '../index';
 
-interface Imsg {
+export interface Imsg {
     message: string,
     result:  {
         [key: string]: any
